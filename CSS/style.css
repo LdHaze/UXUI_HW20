@@ -1,0 +1,330 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#animation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoArea {
+    width: 120px;
+    height: 200px;
+    background: url("../Images/LH_Logo_SpriteImage-01.png") left;
+    background-size: cover;
+    animation: preloader 1s steps(5) 3;
+}
+
+
+@keyframes preloader {
+    100% { background-position: -600px; }
+}
+
+
+
+
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 5%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    width: 150px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.headerNav {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #103559;
+}
+
+.headerNav p {
+    cursor: pointer;
+}
+
+#intro {
+    margin: 1% 5%;
+    height: 200px;
+}
+
+div.myTextIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #E2126F;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+p.titleArea {
+    font-size: 16px;
+    color: #E2126F;
+    font-weight: 500;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 22px;
+    color: #103559;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin: 0;
+}
+
+#workGridArea {
+    margin: 0px 5%;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "Project1 Project2 Project3";
+}
+
+.workProject1 {
+    grid-area: Project1;
+    background-color: rgba(226, 18, 111, 0.1);
+    margin: 0;
+    margin-right: 10px;
+    display: grid;
+    align-content: end;
+}
+
+.workProject2 {
+    grid-area: Project2;
+    background-color: rgba(226, 18, 111, 0.1);
+    margin-right: 10px;
+    margin-left: 10px;
+    display: grid;
+    align-content: end;
+}
+
+.workProject3 {
+    grid-area: Project3;
+    background-color: rgba(226, 18, 111, 0.1);
+    margin: 0;
+    margin-left: 10px;
+    display: grid;
+    align-content: end;
+}
+
+div.heading {
+    display: grid;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 5px solid #E2126F;
+}
+
+.work {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px; 
+    height: 120px;
+    background-color:#103559;
+}
+
+#footerAbout {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    background-color:#103559;
+}
+
+.footerNav {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;;
+    cursor: pointer;
+}
+
+/* Code for Hover States */
+.active, .header:hover {
+    border-bottom: 3px solid #E2126F;
+}
+
+.footerNav p:hover {
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: white;
+    border: 3px solid #E2126F;
+    border-radius: 5px;
+    color: #E2126F;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
+  
+
+/* Code for About Me Page */
+.mainAbout {
+    height: 600px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aboutMe {
+    display: flex;
+    margin: 5%;
+}
+
+.myPic {
+    float: left;
+    height: 500px;
+    padding: 40px 20px 40px 40px;
+    align-self: center;
+}
+
+.aboutContent {
+    text-align: left;
+    align-content: center;
+    padding: 40px 40px 40px 20px;
+    margin: auto;
+}
+
+button {
+    background-color: #E2126F;
+    border: 3px solid #E2126F;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.socialIcons {
+    margin-bottom: 20px;
+}
+
+p.moreInfo {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+/* Code for multiple screen options */
+
+@media only screen and (max-width: 600px) {
+    .headerNav {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-top: 5%;
+    }
+    
+    p.titleArea {
+        font-size: 14px;
+        letter-spacing: 4px;
+        word-spacing: 0px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+
+    #workGridArea {
+        margin: 1% 5%;
+        grid-template-rows: 400px 400px 400px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "Project1" 
+        "Project2" 
+        "Project3";
+    }
+
+    .workProject1 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .workProject2 {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .workProject3 {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .footerNav {
+        width: 80%;       
+    }
+    
+    .myPic {
+        display: none;
+    }
+    
+    .aboutContent {
+        text-align: center;
+        padding: 20px;
+    }
+
+    p.moreInfo {
+        font-size: 16px;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+}
