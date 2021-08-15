@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #animation {
     position: fixed;
     width: 100%;
@@ -27,8 +31,6 @@ body {
 @keyframes preloader {
     100% { background-position: -600px; }
 }
-
-
 
 
 
@@ -58,6 +60,13 @@ body {
 
 .headerNav p {
     cursor: pointer;
+}
+
+.headerNav a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #103559;
+    text-decoration: none;
 }
 
 #intro {
@@ -112,6 +121,7 @@ h2 {
 .workProject1 {
     grid-area: Project1;
     background-color: rgba(226, 18, 111, 0.1);
+    border: 1px solid lightgrey;
     margin: 0;
     margin-right: 10px;
     display: grid;
@@ -121,6 +131,7 @@ h2 {
 .workProject2 {
     grid-area: Project2;
     background-color: rgba(226, 18, 111, 0.1);
+    border: 1px solid lightgrey;
     margin-right: 10px;
     margin-left: 10px;
     display: grid;
@@ -130,6 +141,7 @@ h2 {
 .workProject3 {
     grid-area: Project3;
     background-color: rgba(226, 18, 111, 0.1);
+    border: 1px solid lightgrey;
     margin: 0;
     margin-left: 10px;
     display: grid;
@@ -138,14 +150,18 @@ h2 {
 
 div.heading {
     display: grid;
-    background-color: rgba(0,0,0,0.7);
+    background-color: white;
     padding: 15px;
     height: 25px;
-    color: white;
+    color: #103559;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     border-bottom: 5px solid #E2126F;
+}
+
+.workProject1 a {
+    text-decoration: none;
 }
 
 .work {
@@ -177,8 +193,15 @@ div.heading {
     justify-content: space-evenly;
     font-size: 16px;
     font-weight: 500;
-    color: white;;
+    color: white;
     cursor: pointer;
+}
+
+.footerNav a {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
 }
 
 /* Code for Hover States */
@@ -327,4 +350,138 @@ p.moreInfo {
     button {
         margin-bottom: 20px;
     }
+}
+
+
+/* Code for Penny Case Study Page */
+
+.sectionHero {
+    background-color: #E2126F;
+    height: 400px;
+    display: flex;
+}
+
+.sectionHeader {
+    background-color: #E2126F;
+    height: 100px;
+    display: flex;
+}
+
+.caseStudyMain {
+    display: flex;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 48px;
+    margin: auto;
+}
+
+.sectionCopy {
+    display: flex;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    margin: auto;
+}
+
+.sectionText {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2% 5%;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 26px;
+    color:#103559;
+}
+
+p.caseCopy {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.designProcess {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.designText {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    margin-top: 20px;
+}
+
+.space {
+    display: flex;
+    align-content: center;
+    margin: auto;
+}
+
+.both {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.right {
+    padding-right: 30px;
+}
+
+.left {
+    padding-left: 30px;
+}
+
+.workImages {
+    margin: 2% auto;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftImage {
+    float: left;
+    height: 350px;
+    width: 600px;
+}
+
+.rightCaption {
+    display: flex;
+    padding: 100px;
+}
+
+.rightImage {
+    float: right;
+    height: 350px;
+    width: 600px;
+}
+.leftCaption {
+    display: flex;
+    padding: 100px;
+}
+
+.centerImage {
+    height: 350px;
+    width: 948px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
 }

@@ -1,0 +1,118 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.customNav {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+.text {
+    width: 40%;
+    margin-left: 60%;
+    justify-content: space-around;
+}
+
+.link {
+    color: #103559;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #103559;
+    border-bottom: 3px solid #E2126F;
+}
+
+#intro {
+    margin: 1% 5%;
+    height: 200px;
+}
+
+div.myTextIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #E2126F;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+p.titleArea {
+    font-size: 16px;
+    color: #E2126F;
+    font-weight: 500;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #103559;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin: 0;
+}
+
+.workProject {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.customCard {
+    border-bottom: 5px solid #E2126F;
+}
+
+.projectText {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #103559;
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    height: 120px;
+    background-color:#103559;
+    margin-top: 2%;
+}
+
+.footerNav {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.footerLink {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.footerLink:hover {
+    font-weight: 700;
+    color: white;
+}
